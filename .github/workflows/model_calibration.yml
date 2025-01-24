@@ -61,7 +61,5 @@ jobs:
         git commit -m "Add metrics and updated model"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.MLOPS_TEST_TOKEN}}
-
-
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
 
