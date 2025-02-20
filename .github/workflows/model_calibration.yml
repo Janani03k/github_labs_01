@@ -1,8 +1,11 @@
 name: Periodic Model Calibration
 
 on: 
-  schedule:
-    - cron: '0 0 * * *'  #minutes, hours, day, month, day of week 
+  #schedule:
+    #- cron: '0 0 * * *'  #minutes, hours, day, month, day of week 
+  push:
+    branches:
+      - main
 
 jobs:
   retrain:
